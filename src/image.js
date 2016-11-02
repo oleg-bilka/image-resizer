@@ -94,7 +94,7 @@ Image.prototype.parseUrl = function(request){
   // overwrite the image name with the parsed version so metadata requests do
   // not mess things up
   parts[parts.length - 1] = this.image;
-  console.log('parts2');
+  console.log('parts2', parts);
   // if there is a modifier string remove it
   if (this.modifiers.hasModStr) {
     console.log('mid', this.modifiers.hasModStr,  this.modifiers);
