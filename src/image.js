@@ -96,7 +96,8 @@ Image.prototype.parseUrl = function(request){
   parts[parts.length - 1] = this.image;
   console.log('parts2', parts);
   // if there is a modifier string remove it
-  if (this.modifiers.hasModStr) {
+  if (this.modifiers.hasModStr && !this.modifiers.length && !this.modifiers.height) {
+
     console.log('mid', this.modifiers.hasModStr,  this.modifiers);
     parts.shift();
   }
