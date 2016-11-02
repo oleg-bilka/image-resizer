@@ -43,7 +43,8 @@ s3Stream.prototype._read = function(){
     this.push(this.image);
     return this.push(null);
   }
-
+  
+  console.log('mario', this.image.path, this.image);
   // Set the AWS options
   var awsOptions = {
     Bucket: bucket,
